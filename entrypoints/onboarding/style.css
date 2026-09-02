@@ -1,0 +1,275 @@
+:root {
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --color-background: #f6f7fb;
+  --color-surface: #ffffff;
+  --color-border: #dfe2ea;
+  --color-text: #20232c;
+  --color-text-secondary: #6b7280;
+  --color-accent: #6657e8;
+  --color-accent-hover: #5949d8;
+
+  color: var(--color-text);
+  background: var(--color-background);
+}
+
+[data-theme='dark'] {
+  --color-background: #0f1117;
+  --color-surface: #171a23;
+  --color-border: #2a2e3b;
+  --color-text: #f1f3f7;
+  --color-text-secondary: #a2a8b5;
+  --color-accent: #7667f5;
+  --color-accent-hover: #887bff;
+
+  color: var(--color-text);
+  background: var(--color-background);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--color-background);
+}
+
+button {
+  font: inherit;
+}
+
+.onboarding {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 48px 24px;
+}
+
+.welcomeCard {
+  width: 100%;
+  max-width: 560px;
+  padding: 48px;
+  border: 1px solid var(--color-border);
+  border-radius: 24px;
+  background: var(--color-surface);
+  text-align: center;
+}
+
+.welcomeLogo {
+  width: 84px;
+  height: 84px;
+  object-fit: contain;
+}
+
+.welcomeCard h1 {
+  margin: 22px 0 0;
+  font-size: 2rem;
+  letter-spacing: -0.035em;
+}
+
+.tagline {
+  margin: 8px 0 0;
+  color: var(--color-accent);
+  font-size: 1rem;
+  font-weight: 650;
+}
+
+.intro {
+  max-width: 430px;
+  margin: 20px auto 0;
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.primaryButton {
+  min-height: 44px;
+  margin-top: 28px;
+  padding: 10px 22px;
+  border: 1px solid var(--color-accent);
+  border-radius: 11px;
+  color: #ffffff;
+  background: var(--color-accent);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.primaryButton:hover:not(:disabled) {
+  border-color: var(--color-accent-hover);
+  background: var(--color-accent-hover);
+}
+
+.primaryButton:focus-visible,
+.secondaryButton:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+.primaryButton:disabled,
+.secondaryButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.primaryButton {
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    opacity 0.15s ease;
+}
+
+.secondaryButton {
+  transition:
+    color 0.15s ease,
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    opacity 0.15s ease;
+}
+
+.stepLabel {
+  margin: 18px 0 0;
+  color: var(--color-accent);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.featureSummary {
+  display: grid;
+  gap: 10px;
+  margin-top: 26px;
+  text-align: left;
+}
+
+.featureSummary > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+}
+
+.featureSummary strong {
+  font-size: 0.85rem;
+}
+
+.featureSummary span {
+  color: var(--color-text-secondary);
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
+.onboardingActions {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.secondaryButton {
+  min-height: 44px;
+  padding: 10px 18px;
+  border: 1px solid var(--color-border);
+  border-radius: 11px;
+  color: var(--color-text-secondary);
+  background: var(--color-surface);
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.secondaryButton:hover:not(:disabled) {
+  color: var(--color-text);
+  background: var(--color-background);
+}
+
+.onboardingActions .primaryButton {
+  margin-top: 0;
+}
+
+.pinInstructions {
+  margin-top: 24px;
+  padding: 14px;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  text-align: left;
+}
+
+.pinInstructions strong {
+  font-size: 0.85rem;
+}
+
+.pinInstructions p {
+  margin: 5px 0 0;
+  color: var(--color-text-secondary);
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
+.pinStatus {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 12px;
+  padding: 14px;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  color: var(--color-text-secondary);
+  text-align: left;
+}
+
+.pinStatus strong {
+  color: var(--color-text);
+  font-size: 0.85rem;
+}
+
+.pinStatus span {
+  font-size: 0.76rem;
+  line-height: 1.5;
+}
+
+.pinStatusSuccess {
+  border-color: var(--color-accent);
+}
+
+.pinStatusSuccess strong {
+  color: var(--color-accent);
+}
+
+.pinActions {
+  display: grid;
+  grid-template-columns: auto 1fr 1.3fr;
+  gap: 8px;
+  margin-top: 28px;
+}
+
+.pinActions .primaryButton {
+  margin-top: 0;
+}
+
+.pinActions .secondaryButton {
+  margin-top: 0;
+}
+
+.welcomeCard h1:focus {
+  outline: none;
+}
+
+.welcomeBrand {
+  display: block;
+  width: min(100%, 330px);
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+}

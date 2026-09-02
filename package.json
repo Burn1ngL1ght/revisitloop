@@ -1,0 +1,41 @@
+{
+  "name": "revisitloop",
+  "description": "A local-first browser extension for closing tabs without losing the reason you opened them.",
+  "private": true,
+  "version": "0.1.0",
+  "license": "MPL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Burn1ngL1ght/revisitloop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Burn1ngL1ght/revisitloop/issues"
+  },
+  "homepage": "https://github.com/Burn1ngL1ght/revisitloop#readme",
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "dev:firefox": "wxt -b firefox --mv3",
+    "dev:chrome": "wxt -b chrome --mv3",
+    "build": "wxt build",
+    "build:firefox": "wxt build -b firefox --mv3",
+    "build:chrome": "wxt build -b chrome --mv3",
+    "zip": "wxt zip",
+    "zip:firefox": "wxt zip -b firefox --mv3",
+    "zip:chrome": "wxt zip -b chrome --mv3",
+    "compile": "tsc --noEmit",
+    "postinstall": "wxt prepare"
+  },
+  "dependencies": {
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@wxt-dev/module-react": "^1.1.5",
+    "typescript": "^5.9.3",
+    "web-ext": "^10.5.0",
+    "wxt": "^0.21.3"
+  }
+}
