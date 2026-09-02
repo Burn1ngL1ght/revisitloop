@@ -225,7 +225,7 @@ RevisitLoop is still in development and is not available through a browser exten
 If you want to try it from source, clone the repository:
 
 ```bash
-git clone https://github.com/solemanryan/revisitloop.git
+git clone https://github.com/Burn1ngL1ght/revisitloop.git
 cd revisitloop
 ```
 
