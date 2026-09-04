@@ -211,10 +211,25 @@ RevisitLoop is being developed with Firefox as the primary browser target, with 
 | Browser | Status |
 | --- | --- |
 | **Firefox** | Primary development and testing target |
-| **Firefox-based browsers** | May work, but not every browser has been tested |
-| **Chromium / Chrome-based browsers** | Production builds are working, but broader browser testing is still ongoing |
+| **Google Chrome** | Core workflows and production build manually tested |
+| **Other Firefox-based browsers** | May work, but not every browser has been tested |
+| **Other Chromium-based browsers** | Expected to work, but broader browser-specific testing is still ongoing |
 
 The extension uses **Manifest V3** for both Firefox and Chromium builds.
+
+Chrome testing currently includes:
+
+- creating and closing Loops;
+- timed lease expiration;
+- toolbar badges;
+- return-to-site reminders;
+- Resume, Snooze, and Done actions;
+- editing, archiving, restoring, and deleting Loops;
+- Light, Dark, and System themes;
+- 12-hour and 24-hour time;
+- optional system notifications;
+- first-run onboarding;
+- production-build installation.
 
 ---
 
@@ -390,7 +405,7 @@ The core workflow is working:
 - use either 12-hour or 24-hour time;
 - complete a first-run onboarding flow.
 
-Firefox is the main development target right now. Chromium production builds are also working, but the project still needs more real-world Chromium testing before I consider browser support finished.
+Firefox is still the main development target, but Google Chrome has now also been manually tested across the core RevisitLoop workflows and production build. Other Chromium-based browsers still need broader browser-specific testing.
 
 ---
 
