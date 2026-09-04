@@ -4,11 +4,13 @@
 
 ### Close the tab, not the thought.
 
+**Early Beta · Actively Developed**
+
 RevisitLoop is a local-first browser extension that lets you save why a page matters, close the tab, and come back to it when it actually makes sense.
 
 <br>
 
-**Local-first** · **Manifest V3** · **Firefox-first** · **React + TypeScript + WXT**
+**Early Beta** · **Local-first** · **Manifest V3** · **Firefox + Chrome** · **React + TypeScript + WXT**
 
 <br>
 
@@ -235,7 +237,7 @@ Chrome testing currently includes:
 
 ## Installation
 
-RevisitLoop is still in development and is not available through a browser extension store yet.
+RevisitLoop is currently in Early Beta and is being prepared for its first public browser-store release.
 
 If you want to try it from source, clone the repository:
 
@@ -385,27 +387,37 @@ Contains the screenshots and GIFs used in this README.
 
 ## Current status
 
-RevisitLoop is currently at version **0.1.0** and is still under active development.
+RevisitLoop is currently in **Early Beta** and is actively being developed.
 
-The core workflow is working:
+The core extension is functional and has been manually tested in both Firefox and Google Chrome. RevisitLoop is ready for public use, but this is still an early release, so bugs, browser-specific issues, and changes to features or behavior may still happen as the project develops.
 
-- save the current page as a Loop;
-- record why the page matters;
-- close the original tab after starting the Loop;
-- use no expiration, one hour, tonight, tomorrow, or a custom lease;
-- move expired Loops into Needs Attention;
-- use toolbar badges for waiting Loops;
-- optionally use system notifications;
-- trigger a reminder when returning to the same site;
-- resume, snooze, or finish waiting Loops;
-- edit Active Loops;
-- archive and restore Loops;
-- permanently delete Archived Loops;
-- switch between System, Light, and Dark themes;
-- use either 12-hour or 24-hour time;
-- complete a first-run onboarding flow.
+The core workflow currently includes:
 
-Firefox is still the main development target, but Google Chrome has now also been manually tested across the core RevisitLoop workflows and production build. Other Chromium-based browsers still need broader browser-specific testing.
+- saving the current page as a Loop;
+- recording why the page matters;
+- closing the original tab after starting the Loop;
+- using no expiration, one hour, tonight, tomorrow, or a custom lease;
+- moving expired Loops into Needs Attention;
+- using toolbar badges for waiting Loops;
+- optional system notifications;
+- triggering reminders when returning to the same site;
+- resuming, snoozing, or finishing waiting Loops;
+- editing Active Loops;
+- archiving and restoring Loops;
+- permanently deleting Archived Loops;
+- switching between System, Light, and Dark themes;
+- using either 12-hour or 24-hour time;
+- completing a first-run onboarding flow.
+
+Firefox remains the primary development target, but Google Chrome has also been manually tested across the core RevisitLoop workflows and production build.
+
+Other Firefox-based and Chromium-based browsers may work, but broader browser-specific testing is still ongoing.
+
+### Early Beta
+
+This release is intended to get RevisitLoop into the hands of real users while development continues.
+
+Feedback, bug reports, and feature suggestions are welcome. Some features may change as the extension is used more and I get a better idea of what actually helps versus what just sounds useful on paper.
 
 ---
 
@@ -466,3 +478,9 @@ RevisitLoop is licensed under the **Mozilla Public License 2.0 (MPL-2.0)**.
 You can use, modify, and distribute the project under the terms of the MPL-2.0. If you distribute modified MPL-covered source files, those files must remain available under the MPL-2.0.
 
 See the [LICENSE](LICENSE) file for the full license terms.
+
+## Privacy Policy
+
+RevisitLoop is local-first and does not currently transmit saved Loops or extension data to external servers.
+
+See the full [Privacy Policy](PRIVACY.md) for details.
