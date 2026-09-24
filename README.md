@@ -14,6 +14,11 @@ RevisitLoop is a local-first browser extension that lets you save why a page mat
 
 <br>
 
+[**Install for Firefox**](https://addons.mozilla.org/en-US/firefox/addon/revisitloop/) ·
+[**Install for Google Chrome**](https://chromewebstore.google.com/detail/revisitloop/dfhejojnjfgfglijfheclgiaichlkjdk)
+
+<br>
+
 [What it does](#what-is-revisitloop) ·
 [How it works](#how-revisitloop-works) ·
 [Interface](#the-interface) ·
@@ -194,7 +199,6 @@ RevisitLoop tries to keep its permissions limited to what the extension actually
 
 | Permission | Why RevisitLoop uses it |
 | --- | --- |
-| `activeTab` | Reads information about the page you're currently working with when creating a Loop. |
 | `tabs` | Opens, closes, and checks browser tabs for Loop behavior and return-to-site reminders. |
 | `storage` | Saves Loops and settings locally in the browser. |
 | `alarms` | Handles lease expiration without requiring the popup to stay open. |
@@ -208,18 +212,18 @@ System notifications are optional and are turned off by default.
 
 ## Browser support
 
-RevisitLoop is being developed with Firefox as the primary browser target, with Chromium support being built alongside it.
+RevisitLoop is publicly available for both Firefox and Google Chrome.
 
 | Browser | Status |
 | --- | --- |
-| **Firefox** | Primary development and testing target |
-| **Google Chrome** | Core workflows and production build manually tested |
+| **Firefox** | Public Early Beta release available on Firefox Add-ons |
+| **Google Chrome** | Public Early Beta release available on the Chrome Web Store |
 | **Other Firefox-based browsers** | May work, but not every browser has been tested |
 | **Other Chromium-based browsers** | Expected to work, but broader browser-specific testing is still ongoing |
 
 The extension uses **Manifest V3** for both Firefox and Chromium builds.
 
-Chrome testing currently includes:
+Core workflows have been manually tested in both Firefox and Google Chrome, including:
 
 - creating and closing Loops;
 - timed lease expiration;
@@ -237,9 +241,16 @@ Chrome testing currently includes:
 
 ## Installation
 
-RevisitLoop is currently in Early Beta and is being prepared for its first public browser-store release.
+RevisitLoop is currently available as a public **Early Beta** release.
 
-If you want to try it from source, clone the repository:
+### Install from a browser store
+
+- **Firefox:** [Install RevisitLoop from Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/revisitloop/)
+- **Google Chrome:** [Install RevisitLoop from the Chrome Web Store](https://chromewebstore.google.com/detail/revisitloop/dfhejojnjfgfglijfheclgiaichlkjdk)
+
+### Install from source
+
+If you want to run or contribute to RevisitLoop from source, clone the repository:
 
 ```bash
 git clone https://github.com/Burn1ngL1ght/revisitloop.git
@@ -387,9 +398,9 @@ Contains the screenshots and GIFs used in this README.
 
 ## Current status
 
-RevisitLoop is currently in **Early Beta** and is actively being developed.
+RevisitLoop **0.1.0** is publicly available in **Early Beta** for Firefox and Google Chrome and is actively being developed.
 
-The core extension is functional and has been manually tested in both Firefox and Google Chrome. RevisitLoop is ready for public use, but this is still an early release, so bugs, browser-specific issues, and changes to features or behavior may still happen as the project develops.
+The core extension is functional and has been manually tested in both browsers. Because this is an early release, bugs, browser-specific issues, and changes to features or behavior may still happen as the project develops.
 
 The core workflow currently includes:
 
@@ -409,10 +420,6 @@ The core workflow currently includes:
 - using either 12-hour or 24-hour time;
 - completing a first-run onboarding flow.
 
-Firefox remains the primary development target, but Google Chrome has also been manually tested across the core RevisitLoop workflows and production build.
-
-Other Firefox-based and Chromium-based browsers may work, but broader browser-specific testing is still ongoing.
-
 ### Early Beta
 
 This release is intended to get RevisitLoop into the hands of real users while development continues.
@@ -427,8 +434,7 @@ Some of the things I want to work on next include:
 
 - more testing across Firefox and Chromium-based browsers;
 - additional accessibility testing;
-- improving the install and release process;
-- browser extension store releases;
+- improving the update and release process;
 - better handling of older stored data as the project changes;
 - continued UI and workflow improvements based on actual use;
 - automated testing for the core Loop lifecycle;
